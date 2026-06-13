@@ -41,74 +41,74 @@
   <h2>繁體中文</h2>
 
   <h3>摘要</h3>
-  <p>這個擴充功能<strong>不會蒐集、不會儲存、也不會出售</strong>你的任何個人資料。我們沒有伺服器、沒有帳號系統、沒有分析或追蹤工具、沒有廣告。</p>
+  <p>這個擴充功能不會蒐集、不會儲存，也不會出售您的任何個人資料。我們沒有伺服器、沒有帳號系統、沒有分析或追蹤工具，也沒有廣告。</p>
 
   <h3>我們不蒐集的資料</h3>
-  <p>我們（開發者）不會接收你的任何資料。擴充功能不會把資料傳送到我們的伺服器——因為我們沒有伺服器。</p>
+  <p>我們（開發者）收不到您的任何資料。我們沒有營運任何伺服器，擴充功能也就沒有地方可以把資料送回給我們。</p>
 
-  <h3>在你裝置上儲存的資料</h3>
-  <p>以下資料只儲存在你的瀏覽器本機（<code>chrome.storage.local</code>），不會離開你的裝置，除非用於下方所述的翻譯呼叫：</p>
+  <h3>在您裝置上保存的資料</h3>
+  <p>以下資料只保存在您的瀏覽器本機，不會離開您的裝置，除非用於下方所述的翻譯呼叫：</p>
   <ul>
-    <li><strong>API 金鑰</strong>：你自行輸入的 Gemini／OpenAI／OpenRouter 金鑰。只用於從你的瀏覽器直接呼叫該服務的 API（放在請求標頭中），絕不上傳到我們或任何第三方。預設存於本機 <code>chrome.storage.local</code>；若你開啟「不在磁碟保存金鑰」，則改存於記憶體中的 <code>chrome.storage.session</code>，關閉瀏覽器即清除。可在設定頁「清除 API 金鑰」隨時移除。</li>
-    <li><strong>設定</strong>：翻譯引擎、模型、顯示模式、自動翻譯網站清單等偏好設定。</li>
+    <li><strong>API 金鑰</strong>：您自行輸入的 Gemini／OpenAI／OpenRouter 金鑰。只用於從您的瀏覽器直接呼叫該服務的 API（放在請求標頭中），絕不上傳到我們或任何第三方。金鑰只留在您的裝置上；若您開啟「不在磁碟保存金鑰」，關閉瀏覽器後就會清除。您也可以在設定頁的「清除 API 金鑰」隨時移除。</li>
+    <li><strong>設定</strong>：翻譯引擎、模型、顯示模式、自動翻譯網站清單等偏好。</li>
     <li><strong>翻譯快取</strong>：為減少重複請求而暫存的翻譯結果，可在設定頁「清除翻譯快取」移除。</li>
   </ul>
 
   <h3>翻譯時資料的流向</h3>
-  <p>要翻譯文字，擴充功能必須把<strong>你正在閱讀或選取的文字</strong>傳給你所選擇的翻譯服務：</p>
+  <p>要翻譯文字，擴充功能必須把您正在閱讀或選取的文字，送給您所選擇的翻譯服務：</p>
   <ul>
-    <li><strong>Google 翻譯</strong>（預設）：文字傳送至 Google Translate。</li>
-    <li><strong>Google Gemini／OpenAI／OpenRouter</strong>：僅在你設定金鑰並選用該引擎時，文字才會傳送至該服務。</li>
+    <li><strong>Google 翻譯</strong>（預設）：文字送至 Google Translate。</li>
+    <li><strong>Google Gemini／OpenAI／OpenRouter</strong>：只有在您設定金鑰並選用該引擎時，文字才會送至該服務。</li>
   </ul>
-  <p>這些請求由你的瀏覽器<strong>直接</strong>送出，不經過我們。傳送的資料受該服務各自的隱私權政策規範。我們不會記錄、保存或存取這些內容。</p>
+  <p>這些請求都是由您的瀏覽器直接送出，不會經過我們。送出的資料受該服務各自的隱私權政策規範；我們不會記錄、保存或讀取這些內容。</p>
 
   <h3>權限說明</h3>
   <ul>
-    <li><code>storage</code>：儲存上述設定、金鑰與快取於本機。</li>
+    <li><code>storage</code>：把上述設定、金鑰與快取保存在本機。</li>
     <li><code>contextMenus</code>：提供右鍵「翻譯選取文字」選單。</li>
-    <li><code>activeTab</code>／<code>tabs</code>：對你目前的分頁執行翻譯。</li>
-    <li><code>webNavigation</code>／<code>webRequest</code>：偵測並攔截 PDF 連結以開啟內建檢視器。</li>
-    <li>網站存取（<code>&lt;all_urls&gt;</code>）：在你造訪的網頁上讀取並翻譯內容。擴充功能只在你主動觸發翻譯時讀取頁面文字。</li>
+    <li><code>activeTab</code>／<code>tabs</code>：對您目前的分頁執行翻譯。</li>
+    <li><code>webNavigation</code>／<code>webRequest</code>：偵測並攔截 PDF 連結，以開啟內建檢視器。</li>
+    <li>網站存取（<code>&lt;all_urls&gt;</code>）：在您造訪的網頁上讀取並翻譯內容。擴充功能只在您主動觸發翻譯時才讀取頁面文字。</li>
   </ul>
 
   <h3>資料分享</h3>
-  <p>我們不會把資料分享、出售或轉移給任何人。唯一的資料流向是你自選翻譯服務的直接 API 呼叫（如上所述）。</p>
+  <p>我們不會把資料分享、出售或轉移給任何人。唯一的資料流向，就是您自選翻譯服務的直接 API 呼叫（如上所述）。</p>
 
   <h3>兒童隱私</h3>
-  <p>本擴充功能不針對 13 歲以下兒童，也不會在知情下蒐集兒童資料。</p>
+  <p>本擴充功能不以 13 歲以下兒童為對象，也不會在知情下蒐集兒童資料。</p>
 
   <h3>政策變更</h3>
-  <p>本政策若有更新，會更新上方生效日期並發布於同一網址。</p>
+  <p>本政策若有更新，會更新上方的生效日期，並發布於同一網址。</p>
 
   <hr>
 
   <h2>English</h2>
 
   <h3>Summary</h3>
-  <p>This extension <strong>does not collect, store, or sell</strong> any of your personal data. We operate no servers, no accounts, no analytics or tracking, and show no ads.</p>
+  <p>This extension does not collect, store, or sell any of your personal data. We run no servers, no accounts, no analytics or tracking, and no ads.</p>
 
   <h3>Data we do not collect</h3>
-  <p>We (the developer) receive none of your data. The extension does not send data to our servers — because we have none.</p>
+  <p>We (the developer) receive none of your data. We run no servers of our own, so the extension has nowhere to send your data back to us.</p>
 
   <h3>Data stored on your device</h3>
-  <p>The following is stored only locally in your browser (<code>chrome.storage.local</code>) and never leaves your device except for the translation calls described below:</p>
+  <p>The following stays only on your device and never leaves it, except for the translation calls described below:</p>
   <ul>
-    <li><strong>API keys</strong>: any Gemini / OpenAI / OpenRouter key you enter. Used only to call that service's API directly from your browser (in the request header), never uploaded to us or any third party. Stored in local <code>chrome.storage.local</code> by default; if you enable "session-only key storage", they are kept in in-memory <code>chrome.storage.session</code> instead and wiped when the browser closes. Remove them anytime via "Clear API keys" in settings.</li>
+    <li><strong>API keys</strong>: any Gemini / OpenAI / OpenRouter key you enter. Used only to call that service's API directly from your browser (in the request header), never uploaded to us or any third party. Keys stay on your device; if you turn on "session-only key storage", they are cleared when you close the browser. You can also remove them anytime via "Clear API keys" in settings.</li>
     <li><strong>Settings</strong>: your preferences such as engine, model, display mode, and auto-translate site list.</li>
-    <li><strong>Translation cache</strong>: cached results to reduce duplicate requests. Clear it anytime via "Clear cache" in settings.</li>
+    <li><strong>Translation cache</strong>: cached results that cut down on repeat requests. Clear it anytime via "Clear cache" in settings.</li>
   </ul>
 
   <h3>Where data goes during translation</h3>
-  <p>To translate, the extension must send <strong>the text you are viewing or selecting</strong> to the translation service you have chosen:</p>
+  <p>To translate, the extension sends the text you are reading or selecting to the translation service you have chosen:</p>
   <ul>
     <li><strong>Google Translate</strong> (default): text is sent to Google Translate.</li>
     <li><strong>Google Gemini / OpenAI / OpenRouter</strong>: text is sent only if you configure a key and select that engine.</li>
   </ul>
-  <p>These requests are made <strong>directly</strong> by your browser and do not pass through us. The data sent is governed by that service's own privacy policy. We do not log, retain, or access this content.</p>
+  <p>Your browser makes these requests directly; they do not pass through us. The data sent is governed by that service's own privacy policy. We do not log, retain, or read this content.</p>
 
   <h3>Permissions</h3>
   <ul>
-    <li><code>storage</code>: store the settings, keys, and cache above, locally.</li>
+    <li><code>storage</code>: keep the settings, keys, and cache above on your device.</li>
     <li><code>contextMenus</code>: provide the right-click "Translate selected text" menu.</li>
     <li><code>activeTab</code> / <code>tabs</code>: run translation on your current tab.</li>
     <li><code>webNavigation</code> / <code>webRequest</code>: detect and intercept PDF links to open the built-in viewer.</li>
@@ -116,7 +116,7 @@
   </ul>
 
   <h3>Data sharing</h3>
-  <p>We do not share, sell, or transfer data to anyone. The only data flow is the direct API call to your chosen translation service, as described above.</p>
+  <p>We do not share, sell, or transfer data to anyone. The only data flow is the direct API call to your chosen translation service, described above.</p>
 
   <h3>Children's privacy</h3>
   <p>This extension is not directed to children under 13 and does not knowingly collect their data.</p>
