@@ -49,7 +49,7 @@
   <h3>在你裝置上儲存的資料</h3>
   <p>以下資料只儲存在你的瀏覽器本機（<code>chrome.storage.local</code>），不會離開你的裝置，除非用於下方所述的翻譯呼叫：</p>
   <ul>
-    <li><strong>API 金鑰</strong>：你自行輸入的 Gemini／OpenAI／OpenRouter 金鑰。只用於從你的瀏覽器直接呼叫該服務的 API（放在請求標頭中），絕不上傳到我們或任何第三方。可在設定頁「清除 API 金鑰」隨時移除。</li>
+    <li><strong>API 金鑰</strong>：你自行輸入的 Gemini／OpenAI／OpenRouter 金鑰。只用於從你的瀏覽器直接呼叫該服務的 API（放在請求標頭中），絕不上傳到我們或任何第三方。預設存於本機 <code>chrome.storage.local</code>；若你開啟「不在磁碟保存金鑰」，則改存於記憶體中的 <code>chrome.storage.session</code>，關閉瀏覽器即清除。可在設定頁「清除 API 金鑰」隨時移除。</li>
     <li><strong>設定</strong>：翻譯引擎、模型、顯示模式、自動翻譯網站清單等偏好設定。</li>
     <li><strong>翻譯快取</strong>：為減少重複請求而暫存的翻譯結果，可在設定頁「清除翻譯快取」移除。</li>
   </ul>
@@ -93,7 +93,7 @@
   <h3>Data stored on your device</h3>
   <p>The following is stored only locally in your browser (<code>chrome.storage.local</code>) and never leaves your device except for the translation calls described below:</p>
   <ul>
-    <li><strong>API keys</strong>: any Gemini / OpenAI / OpenRouter key you enter. Used only to call that service's API directly from your browser (in the request header), never uploaded to us or any third party. Remove them anytime via "Clear API keys" in settings.</li>
+    <li><strong>API keys</strong>: any Gemini / OpenAI / OpenRouter key you enter. Used only to call that service's API directly from your browser (in the request header), never uploaded to us or any third party. Stored in local <code>chrome.storage.local</code> by default; if you enable "session-only key storage", they are kept in in-memory <code>chrome.storage.session</code> instead and wiped when the browser closes. Remove them anytime via "Clear API keys" in settings.</li>
     <li><strong>Settings</strong>: your preferences such as engine, model, display mode, and auto-translate site list.</li>
     <li><strong>Translation cache</strong>: cached results to reduce duplicate requests. Clear it anytime via "Clear cache" in settings.</li>
   </ul>
